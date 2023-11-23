@@ -15,17 +15,6 @@ public class PauseMenu : MonoBehaviour
         reloadButton.onClick.AddListener(Retry);
     }
 
-    void Update()
-    {
-        /*if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameIsPaused)
-                Resume();
-            else
-                Pause();
-        }*/
-    }
-
     public void Resume()
     {
         //pauseMenuUI.SetActive(false);
@@ -42,12 +31,19 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
+        Draggable.ResetPickedUpItems();
+        //Draggable.itemCount = 0;
+        Time.timeScale = 1f;
+        GameIsPaused = false;
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Retry()
     {
+        Draggable.ResetPickedUpItems();
+        //Draggable.itemCount = 0;
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameIsPaused = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

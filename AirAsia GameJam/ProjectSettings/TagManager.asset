@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - 1
+  - Fabric
+  - Ground
+  - Items
   layers:
   - Default
   - TransparentFX
@@ -41,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3425684781
+    locked: 0
+  - name: Items Front
+    uniqueID: 496778347
     locked: 0
   - name: Default
     uniqueID: 0

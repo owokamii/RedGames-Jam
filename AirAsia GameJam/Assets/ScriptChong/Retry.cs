@@ -6,15 +6,23 @@ using UnityEngine.UI;
 
 public class Retry : MonoBehaviour
 {
-    public Button reloadButton;
+    public static bool done;
+    public Button DoneButton;
+    public GameObject listUI;
 
     void Start()
     {
-        reloadButton.onClick.AddListener(ReloadScene);
+        done = false;
+    }
+
+    private void Update()
+    {
+        DoneButton.onClick.AddListener(ReloadScene);
+
     }
 
     void ReloadScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        done = true;
     }
 }

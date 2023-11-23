@@ -19,8 +19,9 @@ public class UIHiding : MonoBehaviour
             {
                 if (!boxCollider.OverlapPoint(mousePosition))
                 {
-                        UIObject.SetActive(false);
-                        UICall.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("PhoneLock");
+                    UIObject.SetActive(false);
+                    UICall.SetActive(true);
                 }
             }
             else

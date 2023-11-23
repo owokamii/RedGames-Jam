@@ -6,6 +6,6 @@ public class TimerManager : MonoBehaviour
 
     private void Start()
     {
-        gameTimer.SetDuration(5).Begin();
+        gameTimer.SetDuration(90).Begin();
     }
 }
