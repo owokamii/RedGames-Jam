@@ -3,11 +3,16 @@ using UnityEngine.UI;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Animator cameraMovement;
+    [SerializeField] private Animator mainCameraAnimator;
     public Button leftButton;
     public Button rightButton;
 
-    public int counter = 0;
+    private int counter = 0;
+
+    private void Awake()
+    {
+        mainCameraAnimator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -26,7 +31,7 @@ public class CameraMovement : MonoBehaviour
         if(counter  > 0)
         {
             counter--;
-            cameraMovement.SetFloat("Index", counter);
+            mainCameraAnimator.SetFloat("Index", counter);
         }
     }
 
@@ -35,7 +40,7 @@ public class CameraMovement : MonoBehaviour
         if(counter < 2)
         {
             counter++;
-            cameraMovement.SetFloat("Index", counter);
+            mainCameraAnimator.SetFloat("Index", counter);
         }
     }
 }

@@ -36,7 +36,7 @@ public class List : MonoBehaviour
     public string[] Gamecontroller = new string[] { "game controller", "used to play games with", "fun controller" };
     public string[] Plushie = new string[] { "plushie", "smol friend", "cherished companion" };
     public string[] Pillow = new string[] { "pillow", "sleep enabler", "marshmallow" };
-    public string[] Perfume = new string[] { "perfume", "nose pleaser", "MEN ACTRACTOR" };
+    public string[] Perfume = new string[] { "perfume", "nose pleaser", "men attractor" };
     public string[] Scarf = new string[] { "scarf", "neck warmer", "neck rope" };
     public string[] Sunscreen = new string[] { "sunscreen", "son-blocked", "ray reflector paste" };
     public string[] Medicine = new string[] { "medicine", "illness destroyer", "The good beans" };

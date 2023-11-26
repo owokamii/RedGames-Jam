@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -17,14 +15,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        //pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
     public void Pause()
     {
-        //pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -32,7 +28,6 @@ public class PauseMenu : MonoBehaviour
     public void Menu()
     {
         Draggable.ResetPickedUpItems();
-        //Draggable.itemCount = 0;
         Time.timeScale = 1f;
         GameIsPaused = false;
         SceneManager.LoadScene("MainMenu");
@@ -41,7 +36,6 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Draggable.ResetPickedUpItems();
-        //Draggable.itemCount = 0;
         Time.timeScale = 1f;
         GameIsPaused = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
