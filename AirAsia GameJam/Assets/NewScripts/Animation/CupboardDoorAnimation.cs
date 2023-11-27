@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoorUI : MonoBehaviour
+public class CupboardDoorAnimation : MonoBehaviour
 {
     private Animator animator;
     private bool isClicked = false;
@@ -22,8 +22,6 @@ public class DoorUI : MonoBehaviour
             doorClosed.enabled = false;
             doorOpened.enabled = true;
         }
-        //isClicked = !isClicked;
-        //animator.SetBool("IsCliking", isClicked);
 
         else
         {

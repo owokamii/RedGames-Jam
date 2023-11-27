@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 567337727}
   m_Layer: 0
   m_Name: RedCupboardTop
-  m_TagString: Untagged
+  m_TagString: Cupboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4674,7 +4674,7 @@ GameObject:
   - component: {fileID: 923143226}
   m_Layer: 0
   m_Name: CupboardRight
-  m_TagString: Untagged
+  m_TagString: Cupboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5537,7 +5537,7 @@ GameObject:
   - component: {fileID: 1088123749}
   m_Layer: 0
   m_Name: CupboardLeft
-  m_TagString: Untagged
+  m_TagString: Cupboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6125,7 +6125,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2482233, y: -4.705248}
+  m_Offset: {x: -0.2482233, y: -4.6121206}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6136,7 +6136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.259881, y: 0.51584816}
+  m_Size: {x: 4.259881, y: 0.70210266}
   m_EdgeRadius: 0
 --- !u!61 &1136113888
 BoxCollider2D:
@@ -6151,7 +6151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2557149, y: -1.7506517}
+  m_Offset: {x: -0.2557149, y: -1.6794367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6162,7 +6162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.2987175, y: 0.46414065}
+  m_Size: {x: 4.2987175, y: 0.60657084}
   m_EdgeRadius: 0
 --- !u!61 &1136113889
 BoxCollider2D:
@@ -8944,7 +8944,7 @@ GameObject:
   - component: {fileID: 1677597052}
   m_Layer: 0
   m_Name: GreenCupboard
-  m_TagString: Untagged
+  m_TagString: Cupboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11056,7 +11056,7 @@ GameObject:
   - component: {fileID: 1928064210}
   m_Layer: 0
   m_Name: RedCupboardBottom
-  m_TagString: Untagged
+  m_TagString: Cupboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

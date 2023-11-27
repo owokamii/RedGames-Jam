@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraMovement : MonoBehaviour
+public class CameraAnimation : MonoBehaviour
 {
     [SerializeField] private Animator mainCameraAnimator;
     public Button leftButton;
