@@ -20,7 +20,6 @@ public class Draggable : MonoBehaviour
         itemCount = 0;
     }
 
-
     private Vector3 GetMouseWorldPosition()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -30,11 +29,13 @@ public class Draggable : MonoBehaviour
     {
         if (!(PauseMenu.GameIsPaused))
         {
-            itemCollider.enabled = false;
-            isHolding = true;
-            mousePositionOffset = gameObject.transform.position - GetMouseWorldPosition();
-            //myCollider.isTrigger = true;
-            FindObjectOfType<AudioManager>().Play("Pick");
+            if(!gameObject.CompareTag("Hidden"))
+            {
+                itemCollider.enabled = false;
+                isHolding = true;
+                mousePositionOffset = gameObject.transform.position - GetMouseWorldPosition();
+                FindObjectOfType<AudioManager>().Play("Pick");
+            }
         }
         else
         {
@@ -44,7 +45,6 @@ public class Draggable : MonoBehaviour
 
     private void OnMouseUp()
     {
-        //myCollider.isTrigger = false;
         isHolding = false;
         itemCollider.enabled = true;
     }
@@ -53,9 +53,12 @@ public class Draggable : MonoBehaviour
     {
         if (!(PauseMenu.GameIsPaused))
         {
-            itemCollider.enabled = false;
-            isHolding = true;
-            transform.position = GetMouseWorldPosition() + mousePositionOffset;
+            if (!gameObject.CompareTag("Hidden"))
+            {
+                itemCollider.enabled = false;
+                isHolding = true;
+                transform.position = GetMouseWorldPosition() + mousePositionOffset;
+            }
         }
         else
         {

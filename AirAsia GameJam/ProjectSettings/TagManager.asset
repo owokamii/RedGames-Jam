@@ -8,6 +8,7 @@ TagManager:
   - Fabric
   - Ground
   - Items
+  - Hidden
   layers:
   - Default
   - TransparentFX
