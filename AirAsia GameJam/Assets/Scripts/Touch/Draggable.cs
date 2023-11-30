@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
+    public Texture2D cursor;
+    public Texture2D cursorClicked;
+
     public float itemMass;
     public static List<string> PickedUpItems = new List<string>();
     public string[] itemDescriptions = new string[3];
@@ -13,16 +16,36 @@ public class Draggable : MonoBehaviour
     private bool isHolding = false;
     private BoxCollider2D bottomCollider;
     private PolygonCollider2D itemCollider;
+    private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidBody;
+    private bool selected = false;
 
     private void Awake()
     {
+        Vector2 cursorOffset = new Vector2(cursor.width / 2, cursor.height / 2);
+        Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
+
         bottomCollider = GetComponent<BoxCollider2D>();
         itemCollider = GetComponent<PolygonCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>();
         rigidBody.mass = itemMass;
         itemCount = 0;
     }
+
+    /*private void Update()
+    {
+        Vector2 cursorOffset = new Vector2(cursor.width / 2, cursor.height / 2);
+
+        if (selected)
+        {
+            Cursor.SetCursor(cursorClicked, cursorOffset, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
+        }
+    }*/
 
     private Vector3 GetMouseWorldPosition()
     {
@@ -39,6 +62,7 @@ public class Draggable : MonoBehaviour
                 bottomCollider.enabled = false;
                 isHolding = true;
                 mousePositionOffset = gameObject.transform.position - GetMouseWorldPosition();
+                spriteRenderer.sortingLayerName = "Default";
                 FindObjectOfType<AudioManager>().Play("Pick");
             }
         }
@@ -71,6 +95,7 @@ public class Draggable : MonoBehaviour
     {
         isHolding = false;
         bottomCollider.enabled = true;
+        spriteRenderer.sortingLayerName = "Items Front";
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -102,11 +127,6 @@ public class Draggable : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         FindObjectOfType<AudioManager>().Play("Drop");
-
-        /*if (collision.gameObject.CompareTag("Ground"))
-        {
-            FindObjectOfType<AudioManager>().Play("Drop");
-        }*/
     }
 
     public void PickUp()
@@ -120,5 +140,16 @@ public class Draggable : MonoBehaviour
     public static void ResetPickedUpItems()
     {
         PickedUpItems.Clear();
+    }
+
+    private void OnMouseEnter()
+    {
+        selected = true;
+        Debug.Log("item selected");
+    }
+
+    private void OnMouseExit()
+    {
+        selected = false;
     }
 }

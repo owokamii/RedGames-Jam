@@ -4,14 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - 1
-  - Fabric
-  - Ground
-  - Items
   - Hidden
   - Cupboard
   - BigSurface
   - SmallSurface
+  - Item
+  - Cursor
   layers:
   - Default
   - TransparentFX
@@ -48,6 +46,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3425684781
+    locked: 0
+  - name: UI Back
+    uniqueID: 2374187369
     locked: 0
   - name: Items Front
     uniqueID: 496778347

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Sports Shoes
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 496778347
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ad68920096a54b4b9d956c29aa07db8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,7 +122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0919956, y: -0.425413}
+  m_Offset: {x: -0.0919956, y: -0.5367776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -133,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7346036, y: 0.053096533}
+  m_Size: {x: 1.7346036, y: 0.04567218}
   m_EdgeRadius: 0
 --- !u!60 &6196911093326485874
 PolygonCollider2D:
@@ -209,6 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 846c3965e76b70246aa4d77c9070f375, type: 3}
+  cursorClicked: {fileID: 2800000, guid: 43fca6a6713817b4a84ad03cd9dbb91c, type: 3}
   itemMass: 1
   itemDescriptions:
   - sports shoes
