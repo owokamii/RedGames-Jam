@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 2732279827174196563}
-  - component: {fileID: 5105292429433441370}
+  - component: {fileID: 2152077366385495310}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Plushie
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - plushie
-  - smol friend
-  - cherished companion
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 2732279827174196563}
 --- !u!61 &2732279827174196563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2978923, y: 0.03150773}
   m_EdgeRadius: 0
---- !u!61 &5105292429433441370
-BoxCollider2D:
+--- !u!60 &2152077366385495310
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.027596653}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,6 +158,77 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.85, y: 2.1748066}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.935, y: -0.66499996}
+      - {x: 0.995, y: -0.695}
+      - {x: 1.135, y: -0.655}
+      - {x: 1.255, y: -0.59499997}
+      - {x: 1.405, y: -0.435}
+      - {x: 1.425, y: -0.385}
+      - {x: 1.425, y: -0.044999998}
+      - {x: 1.395, y: 0.024999999}
+      - {x: 1.3149999, y: 0.114999995}
+      - {x: 1.235, y: 0.145}
+      - {x: 1.045, y: 0.125}
+      - {x: 1.005, y: 0.195}
+      - {x: 0.995, y: 0.33499998}
+      - {x: 1.2049999, y: 0.525}
+      - {x: 1.235, y: 0.695}
+      - {x: 1.125, y: 0.905}
+      - {x: 0.995, y: 1.015}
+      - {x: 0.85499996, y: 1.055}
+      - {x: 0.755, y: 1.0649999}
+      - {x: 0.585, y: 1.045}
+      - {x: 0.435, y: 1.035}
+      - {x: 0.105, y: 1.055}
+      - {x: -0.015, y: 1.025}
+      - {x: -0.16499999, y: 1.115}
+      - {x: -0.385, y: 1.115}
+      - {x: -0.555, y: 1.045}
+      - {x: -0.695, y: 0.905}
+      - {x: -0.715, y: 0.705}
+      - {x: -0.78499997, y: 0.525}
+      - {x: -0.805, y: 0.475}
+      - {x: -0.825, y: 0.415}
+      - {x: -0.825, y: 0.265}
+      - {x: -0.79499996, y: 0.185}
+      - {x: -0.965, y: 0.24499999}
+      - {x: -1.0849999, y: 0.265}
+      - {x: -1.2049999, y: 0.255}
+      - {x: -1.395, y: 0.114999995}
+      - {x: -1.425, y: 0.024999999}
+      - {x: -1.425, y: -0.295}
+      - {x: -1.385, y: -0.39499998}
+      - {x: -1.265, y: -0.48499998}
+      - {x: -1.175, y: -0.53499997}
+      - {x: -1.045, y: -0.625}
+      - {x: -1.045, y: -0.805}
+      - {x: -0.965, y: -0.965}
+      - {x: -0.875, y: -1.055}
+      - {x: -0.72499996, y: -1.115}
+      - {x: -0.685, y: -1.115}
+      - {x: -0.565, y: -1.105}
+      - {x: -0.315, y: -1.0649999}
+      - {x: -0.114999995, y: -1.115}
+      - {x: 0.405, y: -1.115}
+      - {x: 0.555, y: -1.0649999}
+      - {x: 0.675, y: -0.995}
+      - {x: 0.825, y: -0.825}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - plushie
+  - smol friend
+  - cherished companion

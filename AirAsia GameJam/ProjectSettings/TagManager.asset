@@ -9,6 +9,9 @@ TagManager:
   - Ground
   - Items
   - Hidden
+  - Cupboard
+  - BigSurface
+  - SmallSurface
   layers:
   - Default
   - TransparentFX

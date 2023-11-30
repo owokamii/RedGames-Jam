@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 6249530240060827422}
-  - component: {fileID: 3375123587337675870}
+  - component: {fileID: 5013358465959698527}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Travel Pillow
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - travel pillow
-  - neck rester
-  - THE U
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 6249530240060827422}
 --- !u!61 &6249530240060827422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6314836, y: 0.0573045}
   m_EdgeRadius: 0
---- !u!61 &3375123587337675870
-BoxCollider2D:
+--- !u!60 &5013358465959698527
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0002155304, y: 0.0034581423}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,6 +158,55 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.795814, y: 1.4866347}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.84, y: -0.255}
+      - {x: 0.84999996, y: 0.065}
+      - {x: 0.81, y: 0.265}
+      - {x: 0.77, y: 0.33499998}
+      - {x: 0.9, y: 0.475}
+      - {x: 0.9, y: 0.615}
+      - {x: 0.87, y: 0.705}
+      - {x: 0.78999996, y: 0.745}
+      - {x: 0.71999997, y: 0.745}
+      - {x: 0.58, y: 0.635}
+      - {x: 0.38, y: 0.745}
+      - {x: -0.12, y: 0.745}
+      - {x: -0.31, y: 0.685}
+      - {x: -0.68, y: 0.42499998}
+      - {x: -0.77, y: 0.305}
+      - {x: -0.84999996, y: 0.205}
+      - {x: -0.9, y: 0.065}
+      - {x: -0.9, y: -0.114999995}
+      - {x: -0.84999996, y: -0.185}
+      - {x: -0.77, y: -0.21499999}
+      - {x: -0.61, y: -0.205}
+      - {x: -0.38, y: -0.095}
+      - {x: -0.17999999, y: 0.095}
+      - {x: 0.19, y: 0.195}
+      - {x: 0.29, y: 0.145}
+      - {x: 0.22999999, y: -0.055}
+      - {x: -0.12, y: -0.375}
+      - {x: -0.17, y: -0.565}
+      - {x: -0.049999997, y: -0.695}
+      - {x: 0.049999997, y: -0.745}
+      - {x: 0.5, y: -0.745}
+      - {x: 0.71999997, y: -0.575}
+      - {x: 0.78999996, y: -0.42499998}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - travel pillow
+  - neck rester
+  - THE U

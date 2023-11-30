@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 8211663838828002651}
-  - component: {fileID: 2131389199208944824}
+  - component: {fileID: 2525735596172351771}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Formal Shoes
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - formal shoes
-  - uncomfortable shoes
-  - worker feet protection
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 8211663838828002651}
 --- !u!61 &8211663838828002651
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8505602, y: 0.02951312}
   m_EdgeRadius: 0
---- !u!61 &2131389199208944824
-BoxCollider2D:
+--- !u!60 &2525735596172351771
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,6 +158,67 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.18, y: 1.2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.71, y: -0.41}
+      - {x: 0.82, y: -0.37}
+      - {x: 1.0699999, y: -0.39}
+      - {x: 1.1899999, y: -0.38}
+      - {x: 1.3299999, y: -0.34}
+      - {x: 1.49, y: -0.12}
+      - {x: 1.5899999, y: 0.13}
+      - {x: 1.5899999, y: 0.42}
+      - {x: 1.5, y: 0.53}
+      - {x: 1.38, y: 0.58}
+      - {x: 1.31, y: 0.59999996}
+      - {x: 1.01, y: 0.59999996}
+      - {x: 0.78999996, y: 0.56}
+      - {x: 0.61, y: 0.48999998}
+      - {x: 0.38, y: 0.39999998}
+      - {x: 0.21, y: 0.35999998}
+      - {x: -0.14, y: 0.26999998}
+      - {x: -0.26, y: 0.29}
+      - {x: -0.29, y: 0.24}
+      - {x: -0.56, y: 0.38}
+      - {x: -0.96, y: 0.53}
+      - {x: -1.0699999, y: 0.56}
+      - {x: -1.15, y: 0.57}
+      - {x: -1.39, y: 0.57}
+      - {x: -1.49, y: 0.52}
+      - {x: -1.52, y: 0.42999998}
+      - {x: -1.53, y: 0.21}
+      - {x: -1.5699999, y: 0.01}
+      - {x: -1.5899999, y: -0.14999999}
+      - {x: -1.5899999, y: -0.38}
+      - {x: -1.56, y: -0.41}
+      - {x: -1.49, y: -0.44}
+      - {x: -1.39, y: -0.45999998}
+      - {x: -1.27, y: -0.48}
+      - {x: -1.09, y: -0.52}
+      - {x: -0.97999996, y: -0.48}
+      - {x: -0.90999997, y: -0.42999998}
+      - {x: -0.7, y: -0.5}
+      - {x: -0.45, y: -0.58}
+      - {x: -0.32999998, y: -0.59}
+      - {x: -0.26999998, y: -0.59999996}
+      - {x: 0.37, y: -0.59999996}
+      - {x: 0.44, y: -0.59}
+      - {x: 0.53, y: -0.56}
+      - {x: 0.61, y: -0.52}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - formal shoes
+  - uncomfortable shoes
+  - worker feet protection

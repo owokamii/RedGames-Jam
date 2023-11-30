@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: -8528464789146133683}
-  - component: {fileID: 925464453174008489}
+  - component: {fileID: 4157371799862382357}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Headphones
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - headphones
-  - ear pleasers
-  - music ear things
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: -8528464789146133683}
 --- !u!61 &-8528464789146133683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6662326, y: 0.016304493}
   m_EdgeRadius: 0
---- !u!61 &925464453174008489
-BoxCollider2D:
+--- !u!60 &4157371799862382357
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,6 +158,68 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.94, y: 1.89}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.45999998, y: -0.155}
+      - {x: -0.45999998, y: 0.16499999}
+      - {x: -0.42, y: 0.385}
+      - {x: -0.25, y: 0.445}
+      - {x: 0.06, y: 0.49499997}
+      - {x: 0.14, y: 0.45499998}
+      - {x: 0.35, y: 0.435}
+      - {x: 0.42999998, y: 0.36499998}
+      - {x: 0.44, y: 0.24499999}
+      - {x: 0.45, y: -0.16499999}
+      - {x: 0.52, y: -0.225}
+      - {x: 0.42, y: -0.295}
+      - {x: 0.42, y: -0.59499997}
+      - {x: 0.45, y: -0.92499995}
+      - {x: 0.48, y: -0.945}
+      - {x: 0.7, y: -0.945}
+      - {x: 0.9, y: -0.865}
+      - {x: 0.94, y: -0.805}
+      - {x: 0.96999997, y: -0.745}
+      - {x: 0.96999997, y: -0.45499998}
+      - {x: 0.94, y: -0.385}
+      - {x: 0.87, y: -0.315}
+      - {x: 0.78, y: -0.155}
+      - {x: 0.78, y: 0.33499998}
+      - {x: 0.77, y: 0.465}
+      - {x: 0.66999996, y: 0.695}
+      - {x: 0.57, y: 0.805}
+      - {x: 0.32999998, y: 0.92499995}
+      - {x: 0.24, y: 0.945}
+      - {x: -0.22999999, y: 0.945}
+      - {x: -0.35999998, y: 0.905}
+      - {x: -0.53999996, y: 0.815}
+      - {x: -0.66999996, y: 0.675}
+      - {x: -0.75, y: 0.505}
+      - {x: -0.77, y: 0.385}
+      - {x: -0.78, y: 0.055}
+      - {x: -0.78, y: -0.185}
+      - {x: -0.93, y: -0.36499998}
+      - {x: -0.96999997, y: -0.45499998}
+      - {x: -0.96999997, y: -0.745}
+      - {x: -0.93, y: -0.815}
+      - {x: -0.87, y: -0.885}
+      - {x: -0.68, y: -0.945}
+      - {x: -0.48, y: -0.945}
+      - {x: -0.42, y: -0.875}
+      - {x: -0.42, y: -0.285}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 2
+  itemDescriptions:
+  - headphones
+  - ear pleasers
+  - music ear things

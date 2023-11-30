@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 8542459090082203002}
-  - component: {fileID: 5927438491897300186}
+  - component: {fileID: 8691812268170428068}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Sunglasses
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - sunglasses
-  - terminator Eye Wear
-  - black Glass with Sticks
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 8542459090082203002}
 --- !u!61 &8542459090082203002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3607664, y: 0.016780615}
   m_EdgeRadius: 0
---- !u!61 &5927438491897300186
-BoxCollider2D:
+--- !u!60 &8691812268170428068
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0026328564}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,6 +158,35 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.93, y: 0.4847343}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.275, y: -0.24499999}
+      - {x: 0.73499995, y: -0.24499999}
+      - {x: 0.965, y: 0.015}
+      - {x: 0.965, y: 0.235}
+      - {x: 0.905, y: 0.24499999}
+      - {x: -0.945, y: 0.24499999}
+      - {x: -0.965, y: 0.195}
+      - {x: -0.965, y: -0.015}
+      - {x: -0.73499995, y: -0.24499999}
+      - {x: -0.275, y: -0.24499999}
+      - {x: -0.155, y: -0.145}
+      - {x: 0.105, y: -0.024999999}
+      - {x: 0.175, y: -0.175}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - sunglasses
+  - terminator eye wear
+  - black glass with sticks

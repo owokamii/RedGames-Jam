@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
   - component: {fileID: 5853102030140962545}
-  - component: {fileID: 4075992658994873059}
+  - component: {fileID: -4403553244258257520}
   - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Bath Towel
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3333145189594241153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6181, y: -1.3723999, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -135,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4004376, y: 0.22977328}
   m_EdgeRadius: 0
---- !u!61 &4075992658994873059
-BoxCollider2D:
+--- !u!60 &-4403553244258257520
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -148,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0010504127}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -158,9 +158,28 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.6621008}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.23, y: -0.29999998}
+      - {x: 1.24, y: 0.32}
+      - {x: 1.24, y: 0.97999996}
+      - {x: 1.2099999, y: 1.25}
+      - {x: 1.13, y: 1.3299999}
+      - {x: 0.66999996, y: 1.3299999}
+      - {x: 0.26, y: 1.3199999}
+      - {x: 0.26, y: 1.3299999}
+      - {x: -0.22999999, y: 1.3299999}
+      - {x: -0.53999996, y: 1.31}
+      - {x: -1.17, y: 1.3}
+      - {x: -1.23, y: 1.22}
+      - {x: -1.26, y: 0.66999996}
+      - {x: -1.28, y: -0.14}
+      - {x: -1.28, y: -1.12}
+      - {x: -1.01, y: -1.3299999}
+      - {x: 0.77, y: -1.3299999}
+      - {x: 1.17, y: -1.31}
+      - {x: 1.28, y: -1.23}
+      - {x: 1.28, y: -0.83}
 --- !u!114 &3333145189594241152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,11 +192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  names:
+  itemMass: 1
+  itemDescriptions:
   - bath towel
   - opposite of face towel
   - dewetting cloth
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 5853102030140962545}

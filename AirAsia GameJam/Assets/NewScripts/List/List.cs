@@ -11,41 +11,57 @@ public class List : MonoBehaviour
     public GameObject text;
     public Transform content;
 
-    //fix array
-    public string[] cloth1 = new string[] { "summer clothes", "clothes to wear when warm", "breathable clothes" };
-    public string[] cloth2 = new string[] { "winter clothes", "warm clothes", "warm straight jacket" };
-    public string[] cloth3 = new string[] { "casual clothes", "comfy clothes", "everywhere wear" };
-    public string[] cloth4 = new string[] { "formal clothes", "stuffy clothes", "wage slave wear" };
-    public string[] tower1 = new string[] { "bath towel", "opposite of face towel", "dewetting cloth" };
-    public string[] tower2 = new string[] { "face towel", "opposite of bath towel", "opposite of butt towel" };
-    public string[] sock1 = new string[] { "thick socks", "feet warmers", "extra extra uncomfortable when wet" };
-    public string[] sock2 = new string[] { "thin socks", "short stockings", "extra uncomfortable when wet" };
-    public string[] shoes1 = new string[] { "casual shoes", "wear something on feet preferably comfortable", "casual feet protec toes" };
-    public string[] shoes2 = new string[] { "sports shoes", "shoes for sports", "gotta go fast" };
-    public string[] shoes3 = new string[] { "formal shoes", "uncomfortable shoes", "worker feet protection" };
-    public string[] shoes4 = new string[] { "slippers", "shoe that is more exposed", "the thing your mom hits you with" };
-    public string[] toilet = new string[] { "toiletries bag", "cleaning tools for humans", "bathroom components" };
-    public string[] Underwear = new string[] { "underwear", "lesser shorts", "DON’T GO COMMANDO" };
+    //fix array ==============================================================================================================================
+
+    // clothes
+    public string[] summerClothes = new string[] { "summer clothes", "clothes to wear when warm", "breathable clothes" };
+    public string[] winterClothes = new string[] { "winter clothes", "warm clothes", "warm straight jacket" };
+    public string[] casualClothes = new string[] { "casual clothes", "comfy clothes", "everywhere wear" };
+    public string[] formalClothes = new string[] { "formal clothes", "stuffy clothes", "wage slave wear" };
+    
+    // towels
+    public string[] bathTowel = new string[] { "bath towel", "opposite of face towel", "dewetting cloth" };
+    public string[] faceTowel = new string[] { "face towel", "opposite of bath towel", "opposite of butt towel" };
+
+    // socks
+    public string[] thickSocks = new string[] { "thick socks", "feet warmers", "extra extra uncomfortable when wet" };
+    public string[] thinkSocks = new string[] { "thin socks", "short stockings", "extra uncomfortable when wet" };
+
+    // shoes
+    public string[] casualShoes = new string[] { "casual shoes", "wear something on feet preferably comfortable", "casual feet protec toes" };
+    public string[] sportsShoes = new string[] { "sports shoes", "shoes for sports", "gotta go fast" };
+    public string[] formalShoes = new string[] { "formal shoes", "uncomfortable shoes", "worker feet protection" };
+    public string[] slippers = new string[] { "slippers", "shoe that is more exposed", "the thing your mom hits you with" };
+
+    // personal
+    public string[] toiletriesBag = new string[] { "toiletries bag", "cleaning tools for humans", "bathroom components" };
+    public string[] underwear = new string[] { "underwear", "lesser shorts", "DON’T GO COMMANDO" };
 
     //not fix array
     public string[] Swimsuit = new string[] { "swim suit", "water repellent wear", "totally not scuba gear" };
+    public string[] Scarf = new string[] { "scarf", "neck warmer", "neck rope" };
+
+    // devices
     public string[] Laptop = new string[] { "laptop", "handheld PC", "folding thinking machine" };
     public string[] LaptopCharger = new string[] { "laptop charger", "electric transporter", "thinking machine replenisher" };
-    public string[] PlayingCards = new string[] { "playing cards", "gambler set", "start of gambling addiction" };
     public string[] Gameconsole = new string[] { "game console", "smol game thing", "handheld fun" };
     public string[] Gamecontroller = new string[] { "game controller", "used to play games with", "fun controller" };
-    public string[] Plushie = new string[] { "plushie", "smol friend", "cherished companion" };
-    public string[] Pillow = new string[] { "pillow", "sleep enabler", "marshmallow" };
     public string[] Perfume = new string[] { "perfume", "nose pleaser", "men attractor" };
-    public string[] Scarf = new string[] { "scarf", "neck warmer", "neck rope" };
-    public string[] Sunscreen = new string[] { "sunscreen", "son-blocked", "ray reflector paste" };
     public string[] Medicine = new string[] { "medicine", "illness destroyer", "The good beans" };
-    public string[] Backpack = new string[] { "backpack", "stuff holder", "fabric container" };
-    public string[] Waterbottle = new string[] { "water bottle", "dihydrogen monoxide container", "H20" };
-    public string[] TravelPillow = new string[] { "travel pillow", "neck rester", "THE U" };
-    public string[] Sunglasses = new string[] { "sunglasses", "terminator eye wear", "black glass with sticks" };
     public string[] Camera = new string[] { "camera", "memory maker", "scene constructor" };
     public string[] Headphones = new string[] { "headphones", "ear pleasers", "music ear things" };
+
+    // toys
+    public string[] Plushie = new string[] { "plushie", "smol friend", "cherished companion" };
+    public string[] PlayingCards = new string[] { "playing cards", "gambler set", "start of gambling addiction" };
+
+    // travel items
+    public string[] Pillow = new string[] { "pillow", "sleep enabler", "marshmallow" };
+    public string[] TravelPillow = new string[] { "travel pillow", "neck rester", "THE U" };
+    public string[] Backpack = new string[] { "backpack", "stuff holder", "fabric container" };
+    public string[] Sunscreen = new string[] { "sunscreen", "son-blocked", "ray reflector paste" };
+    public string[] Waterbottle = new string[] { "water bottle", "dihydrogen monoxide container", "H20" };
+    public string[] Sunglasses = new string[] { "sunglasses", "terminator eye wear", "black glass with sticks" };
 
 
     private Dictionary<string, Text> nameTexts = new Dictionary<string, Text>();
@@ -74,12 +90,12 @@ public class List : MonoBehaviour
 
     public void ListUp()
     {
-        List<string[]> mainArrays = new List<string[]> { cloth1, cloth2, cloth3, cloth4 };
-        List<string[]> mainArrays2 = new List<string[]> { tower1, tower2 };
-        List<string[]> mainArrays3 = new List<string[]> { sock1, sock2 };
-        List<string[]> mainArrays4 = new List<string[]> { shoes1, shoes2, shoes3, shoes4 };
-        List<string[]> mainArrays5 = new List<string[]> { toilet };
-        List<string[]> mainArrays6 = new List<string[]> { Underwear };
+        List<string[]> mainArrays = new List<string[]> { summerClothes, winterClothes, casualClothes, formalClothes };
+        List<string[]> mainArrays2 = new List<string[]> { bathTowel, faceTowel };
+        List<string[]> mainArrays3 = new List<string[]> { thickSocks, thinkSocks };
+        List<string[]> mainArrays4 = new List<string[]> { casualShoes, sportsShoes, formalShoes, slippers };
+        List<string[]> mainArrays5 = new List<string[]> { toiletriesBag };
+        List<string[]> mainArrays6 = new List<string[]> { underwear };
         List<string[]> mainArrays9 = new List<string[]> { Swimsuit, Laptop, LaptopCharger, PlayingCards, Gameconsole, Gamecontroller, Plushie, Pillow, Perfume, Scarf, Sunscreen, Medicine, Backpack, Waterbottle, TravelPillow, Sunglasses, Camera, Headphones };
         List<string> selectedItems = new List<string>();
         List<string> nameList = new List<string>();

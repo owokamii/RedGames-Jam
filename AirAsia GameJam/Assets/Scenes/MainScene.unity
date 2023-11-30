@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 289823700}
   m_Layer: 0
   m_Name: Table
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,7 +798,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.38039216, g: 0.15686275, b: 0.1254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -815,8 +815,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -877,7 +877,7 @@ GameObject:
   - component: {fileID: 307738581}
   m_Layer: 0
   m_Name: Hanger
-  m_TagString: Ground
+  m_TagString: SmallSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1589,7 +1589,7 @@ GameObject:
   - component: {fileID: 362616193}
   m_Layer: 0
   m_Name: SofaBed
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.38039216, g: 0.15686275, b: 0.1254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2367,8 +2367,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2535,6 +2535,7 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2690,6 +2691,20 @@ MonoBehaviour:
   mainCameraAnimator: {fileID: 0}
   leftButton: {fileID: 1031114235}
   rightButton: {fileID: 352146052}
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b677187b909ff48bf45527bc97336b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 846c3965e76b70246aa4d77c9070f375, type: 3}
+  cursorClicked: {fileID: 2800000, guid: 43fca6a6713817b4a84ad03cd9dbb91c, type: 3}
 --- !u!1001 &519613405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4101,7 +4116,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.38039216, g: 0.15686275, b: 0.1254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4118,8 +4133,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4265,7 +4280,7 @@ GameObject:
   - component: {fileID: 771869980}
   m_Layer: 0
   m_Name: BookShelf_2
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4957,7 +4972,7 @@ GameObject:
   - component: {fileID: 1028999670}
   m_Layer: 0
   m_Name: BookShelf_1
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5174,7 +5189,7 @@ GameObject:
   - component: {fileID: 1039708450}
   m_Layer: 0
   m_Name: Hook_2
-  m_TagString: Ground
+  m_TagString: SmallSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6092,7 +6107,7 @@ GameObject:
   - component: {fileID: 1136113887}
   m_Layer: 0
   m_Name: Cupboard
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6284,10 +6299,6 @@ PrefabInstance:
     - target: {fileID: 3333145189594241158, guid: 9b868a96384b28d49b0941c3be650ada, type: 3}
       propertyPath: m_SortingLayerID
       value: 496778347
-      objectReference: {fileID: 0}
-    - target: {fileID: 4075992658994873059, guid: 9b868a96384b28d49b0941c3be650ada, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5853102030140962545, guid: 9b868a96384b28d49b0941c3be650ada, type: 3}
       propertyPath: m_Enabled
@@ -7420,7 +7431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3333145189594241153, guid: 4dcfc628a609f0e4cb52337cd41233bf, type: 3}
       propertyPath: m_TagString
-      value: Hidden
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3333145189594241157, guid: 4dcfc628a609f0e4cb52337cd41233bf, type: 3}
       propertyPath: m_RootOrder
@@ -7508,6 +7519,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1622621692}
     m_Modifications:
+    - target: {fileID: 978822072584587018, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978822072584587018, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 496778347
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772115453819440871, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772115453819440871, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 496778347
+      objectReference: {fileID: 0}
     - target: {fileID: 3333145189594241152, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
       propertyPath: itemCollider
       value: 
@@ -7595,6 +7622,22 @@ PrefabInstance:
     - target: {fileID: 7345267995317721095, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345267995317721095, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345267995317721095, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7381363217281979112, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7381363217281979112, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 016ff325cc147f845944b91e9278e4f0, type: 3}
@@ -7799,7 +7842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7879,59 +7922,59 @@ MonoBehaviour:
   textTemplate: {fileID: 1429976649}
   text: {fileID: 0}
   content: {fileID: 1396381006}
-  cloth1:
+  summerClothes:
   - summer clothes
   - clothes to wear when warm
   - breathable clothes
-  cloth2:
+  winterClothes:
   - winter clothes
   - warm clothes
   - warm straight jacket
-  cloth3:
+  casualClothes:
   - casual clothes
   - comfy clothes
   - everywhere wear
-  cloth4:
+  formalClothes:
   - formal clothes
   - stuffy clothes
   - wage slave wear
-  tower1:
+  bathTowel:
   - bath towel
   - opposite of face towel
   - dewetting cloth
-  tower2:
+  faceTowel:
   - face towel
   - opposite of bath towel
   - opposite of butt towel
-  sock1:
+  thickSocks:
   - thick socks
   - feet warmers
   - extra extra uncomfortable when wet
-  sock2:
+  thinkSocks:
   - thin socks
   - short stockings
   - extra uncomfortable when wet
-  shoes1:
+  casualShoes:
   - casual shoes
   - wear something on feet preferably comfortable
   - casual feet protec toes
-  shoes2:
+  sportsShoes:
   - sports shoes
   - shoes for sports
   - gotta go fast
-  shoes3:
+  formalShoes:
   - formal shoes
   - uncomfortable shoes
   - worker feet protection
-  shoes4:
+  slippers:
   - slippers
   - shoe that is more exposed
   - the thing your mom hits you with
-  toilet:
+  toiletriesBag:
   - toiletries bag
   - cleaning tools for humans
   - bathroom components
-  Underwear:
+  underwear:
   - underwear
   - lesser shorts
   - "DON\u2019T GO COMMANDO"
@@ -7939,6 +7982,10 @@ MonoBehaviour:
   - swim suit
   - water repellent wear
   - totally not scuba gear
+  Scarf:
+  - scarf
+  - neck warmer
+  - neck rope
   Laptop:
   - laptop
   - handheld PC
@@ -7947,10 +7994,6 @@ MonoBehaviour:
   - laptop charger
   - electric transporter
   - thinking machine replenisher
-  PlayingCards:
-  - playing cards
-  - gambler set
-  - start of gambling addiction
   Gameconsole:
   - game console
   - smol game thing
@@ -7959,46 +8002,14 @@ MonoBehaviour:
   - game controller
   - used to play games with
   - fun controller
-  Plushie:
-  - plushie
-  - smol friend
-  - cherished companion
-  Pillow:
-  - pillow
-  - sleep enabler
-  - marshmallow
   Perfume:
   - perfume
   - nose pleaser
   - men attractor
-  Scarf:
-  - scarf
-  - neck warmer
-  - neck rope
-  Sunscreen:
-  - sunscreen
-  - son-blocked
-  - ray reflector paste
   Medicine:
   - medicine
   - illness destroyer
   - The good beans
-  Backpack:
-  - backpack
-  - stuff holder
-  - fabric container
-  Waterbottle:
-  - water bottle
-  - dihydrogen monoxide container
-  - H20
-  TravelPillow:
-  - travel pillow
-  - neck rester
-  - THE U
-  Sunglasses:
-  - sunglasses
-  - terminator eye wear
-  - black glass with sticks
   Camera:
   - camera
   - memory maker
@@ -8007,6 +8018,38 @@ MonoBehaviour:
   - headphones
   - ear pleasers
   - music ear things
+  Plushie:
+  - plushie
+  - smol friend
+  - cherished companion
+  PlayingCards:
+  - playing cards
+  - gambler set
+  - start of gambling addiction
+  Pillow:
+  - pillow
+  - sleep enabler
+  - marshmallow
+  TravelPillow:
+  - travel pillow
+  - neck rester
+  - THE U
+  Backpack:
+  - backpack
+  - stuff holder
+  - fabric container
+  Sunscreen:
+  - sunscreen
+  - son-blocked
+  - ray reflector paste
+  Waterbottle:
+  - water bottle
+  - dihydrogen monoxide container
+  - H20
+  Sunglasses:
+  - sunglasses
+  - terminator eye wear
+  - black glass with sticks
 --- !u!114 &1396381008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8077,7 +8120,7 @@ GameObject:
   - component: {fileID: 1413557918}
   m_Layer: 0
   m_Name: Hook_1
-  m_TagString: Ground
+  m_TagString: SmallSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8126,7 +8169,7 @@ GameObject:
   - component: {fileID: 1424784062}
   m_Layer: 0
   m_Name: Closet
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8210,7 +8253,7 @@ GameObject:
   - component: {fileID: 1428168900}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8424,8 +8467,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280297569
+  m_fontColor: {r: 0.3803922, g: 0.15686275, b: 0.1254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8442,8 +8485,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9764,7 +9807,7 @@ GameObject:
   - component: {fileID: 1735478024}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11303,7 +11346,7 @@ GameObject:
   - component: {fileID: 1934990106}
   m_Layer: 0
   m_Name: Chair
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11974,7 +12017,7 @@ GameObject:
   - component: {fileID: 2002200401}
   m_Layer: 0
   m_Name: Desk
-  m_TagString: Ground
+  m_TagString: BigSurface
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

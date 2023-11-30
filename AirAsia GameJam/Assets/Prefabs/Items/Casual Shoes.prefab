@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 2603265567444744098}
-  - component: {fileID: 2902855894673736706}
+  - component: {fileID: 932069755326990544}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Casual Shoes
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - casual shoes
-  - wear something on feet preferably comfortable
-  - casual feet protec toes
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 2603265567444744098}
 --- !u!61 &2603265567444744098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4628093, y: 0.05641949}
   m_EdgeRadius: 0
---- !u!61 &2902855894673736706
-BoxCollider2D:
+--- !u!60 &932069755326990544
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.005449295}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,6 +158,58 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.96, y: 1.3491013}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.3299999, y: -0.42999998}
+      - {x: 1.3299999, y: -0.26}
+      - {x: 1.48, y: -0.17999999}
+      - {x: 1.48, y: 0.07}
+      - {x: 1.4699999, y: 0.12}
+      - {x: 1.4, y: 0.17}
+      - {x: 1.1899999, y: 0.25}
+      - {x: 1.11, y: 0.28}
+      - {x: 0.90999997, y: 0.29}
+      - {x: 0.78999996, y: 0.29999998}
+      - {x: 0.64, y: 0.29999998}
+      - {x: 0.51, y: 0.34}
+      - {x: 0.39, y: 0.34}
+      - {x: 0.22, y: 0.47}
+      - {x: 0.13, y: 0.48}
+      - {x: 0.03, y: 0.59999996}
+      - {x: -0.5, y: 0.58}
+      - {x: -0.58, y: 0.62}
+      - {x: -0.83, y: 0.68}
+      - {x: -1.12, y: 0.68}
+      - {x: -1.1999999, y: 0.65}
+      - {x: -1.25, y: 0.5}
+      - {x: -1.36, y: 0.38}
+      - {x: -1.4699999, y: 0.04}
+      - {x: -1.48, y: -0.08}
+      - {x: -1.48, y: -0.52}
+      - {x: -1.43, y: -0.59}
+      - {x: -1.38, y: -0.59999996}
+      - {x: -0.96, y: -0.59}
+      - {x: -0.82, y: -0.59}
+      - {x: -0.42, y: -0.65}
+      - {x: -0.04, y: -0.68}
+      - {x: 0.45999998, y: -0.68}
+      - {x: 0.56, y: -0.66999996}
+      - {x: 0.85999995, y: -0.63}
+      - {x: 1.06, y: -0.56}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - casual shoes
+  - wear something on feet preferably comfortable
+  - casual feet protec toes

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 5612240118950859655}
-  - component: {fileID: 665322204019156307}
+  - component: {fileID: 4069516613365535325}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Thick Socks
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - thick socks
-  - feet warmers
-  - extra extra uncomfortable when wet
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 5612240118950859655}
 --- !u!61 &5612240118950859655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6754305, y: 0.03543067}
   m_EdgeRadius: 0
---- !u!61 &665322204019156307
-BoxCollider2D:
+--- !u!60 &4069516613365535325
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,6 +158,84 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.91, y: 1.27}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.655, y: -0.24499999}
+      - {x: 1.755, y: -0.24499999}
+      - {x: 1.935, y: -0.16499999}
+      - {x: 1.9549999, y: -0.105}
+      - {x: 1.9549999, y: 0.055}
+      - {x: 1.935, y: 0.114999995}
+      - {x: 1.8549999, y: 0.235}
+      - {x: 1.8249999, y: 0.265}
+      - {x: 1.7149999, y: 0.33499998}
+      - {x: 1.655, y: 0.405}
+      - {x: 1.485, y: 0.515}
+      - {x: 1.275, y: 0.59499997}
+      - {x: 1.155, y: 0.585}
+      - {x: 1.035, y: 0.525}
+      - {x: 0.945, y: 0.49499997}
+      - {x: 0.865, y: 0.435}
+      - {x: 0.865, y: 0.355}
+      - {x: 0.635, y: 0.235}
+      - {x: 0.505, y: 0.305}
+      - {x: 0.265, y: 0.36499998}
+      - {x: -0.055, y: 0.36499998}
+      - {x: -0.155, y: 0.315}
+      - {x: -0.255, y: 0.255}
+      - {x: -0.545, y: 0.185}
+      - {x: -0.765, y: 0.305}
+      - {x: -0.675, y: 0.39499998}
+      - {x: -0.675, y: 0.53499997}
+      - {x: -0.765, y: 0.575}
+      - {x: -0.905, y: 0.575}
+      - {x: -0.905, y: 0.615}
+      - {x: -0.92499995, y: 0.635}
+      - {x: -0.98499995, y: 0.635}
+      - {x: -0.995, y: 0.625}
+      - {x: -1.105, y: 0.635}
+      - {x: -1.185, y: 0.635}
+      - {x: -1.395, y: 0.585}
+      - {x: -1.7049999, y: 0.505}
+      - {x: -1.8249999, y: 0.415}
+      - {x: -1.9449999, y: 0.33499998}
+      - {x: -1.9549999, y: 0.295}
+      - {x: -1.9549999, y: 0.085}
+      - {x: -1.925, y: 0.035}
+      - {x: -1.795, y: -0.024999999}
+      - {x: -1.765, y: -0.035}
+      - {x: -1.7249999, y: -0.035}
+      - {x: -1.5849999, y: -0.065}
+      - {x: -1.395, y: -0.095}
+      - {x: -1.3149999, y: -0.125}
+      - {x: -1.185, y: -0.175}
+      - {x: -1.055, y: -0.235}
+      - {x: -0.585, y: -0.375}
+      - {x: -0.545, y: -0.385}
+      - {x: -0.405, y: -0.385}
+      - {x: -0.005, y: -0.315}
+      - {x: 0.13499999, y: -0.265}
+      - {x: 0.21499999, y: -0.275}
+      - {x: 0.525, y: -0.545}
+      - {x: 0.675, y: -0.635}
+      - {x: 0.885, y: -0.635}
+      - {x: 0.965, y: -0.59499997}
+      - {x: 1.265, y: -0.385}
+      - {x: 1.4549999, y: -0.285}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - thick socks
+  - feet warmers
+  - extra extra uncomfortable when wet

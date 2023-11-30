@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 2676506526805076227}
-  - component: {fileID: 4247680950896633535}
+  - component: {fileID: 8982183590006607144}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Underwear
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - underwear
-  - lesser shorts
-  - "DON\u2019T GO COMMANDO"
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 2676506526805076227}
 --- !u!61 &2676506526805076227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8521998, y: 0.01939249}
   m_EdgeRadius: 0
---- !u!61 &4247680950896633535
-BoxCollider2D:
+--- !u!60 &8982183590006607144
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,6 +158,57 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.14, y: 1.16}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7, y: -0.14999999}
+      - {x: 0.66999996, y: -0.06}
+      - {x: 0.56, y: 0.049999997}
+      - {x: 0.48999998, y: 0.17}
+      - {x: 0.53999996, y: 0.19}
+      - {x: 0.96999997, y: 0.08}
+      - {x: 1.0699999, y: 0.16}
+      - {x: 1.0699999, y: 0.48}
+      - {x: 0.97999996, y: 0.58}
+      - {x: 0.83, y: 0.58}
+      - {x: 0.42999998, y: 0.48999998}
+      - {x: 0.32999998, y: 0.47}
+      - {x: 0.22999999, y: 0.42999998}
+      - {x: -0.01, y: 0.44}
+      - {x: -0.13, y: 0.42}
+      - {x: -0.29999998, y: 0.44}
+      - {x: -0.69, y: 0.45999998}
+      - {x: -0.95, y: 0.48999998}
+      - {x: -1, y: 0.48}
+      - {x: -1.0699999, y: 0.39}
+      - {x: -1.0699999, y: 0.24}
+      - {x: -0.9, y: 0.099999994}
+      - {x: -0.85999995, y: -0.03}
+      - {x: -0.83, y: -0.089999996}
+      - {x: -0.71999997, y: -0.11}
+      - {x: -0.53999996, y: -0.12}
+      - {x: -0.32999998, y: 0.07}
+      - {x: -0.35999998, y: -0.03}
+      - {x: -0.39, y: -0.22999999}
+      - {x: -0.42, y: -0.53999996}
+      - {x: -0.38, y: -0.58}
+      - {x: -0.03, y: -0.58}
+      - {x: 0.01, y: -0.5}
+      - {x: 0.37, y: -0.42}
+      - {x: 0.53, y: -0.41}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 1
+  itemDescriptions:
+  - underwear
+  - lesser shorts
+  - "DON\u2019T GO COMMANDO"

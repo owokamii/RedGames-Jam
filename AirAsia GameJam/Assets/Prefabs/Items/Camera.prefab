@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 1972138894984623070}
-  - component: {fileID: -8255589990819458163}
+  - component: {fileID: 4229185597545341749}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - camera
-  - memory maker
-  - scene constructor
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 1972138894984623070}
 --- !u!61 &1972138894984623070
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,8 +135,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4870839, y: 0.040341616}
   m_EdgeRadius: 0
---- !u!61 &-8255589990819458163
-BoxCollider2D:
+--- !u!60 &4229185597545341749
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.003918886, y: 0.014815509}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,6 +158,49 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.3362255, y: 1.0503689}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.175, y: -0.22999999}
+      - {x: 1.035, y: -0.07}
+      - {x: 0.385, y: 0.51}
+      - {x: 0.24499999, y: 0.53999996}
+      - {x: -0.305, y: 0.53999996}
+      - {x: -0.355, y: 0.5}
+      - {x: -0.85499996, y: 0.5}
+      - {x: -0.99779904, y: 0.39421433}
+      - {x: -1.175, y: 0.25}
+      - {x: -1.175, y: -0.08}
+      - {x: -1.115, y: -0.19999999}
+      - {x: -1.025, y: -0.26}
+      - {x: -1.015, y: -0.52}
+      - {x: -0.995, y: -0.53999996}
+      - {x: 0.765, y: -0.53999996}
+      - {x: 1.055, y: -0.53}
+      - {x: 1.105, y: -0.52}
+      - {x: 1.175, y: -0.44}
+    - - {x: 0.515, y: 0.089999996}
+      - {x: 0.505, y: 0.08}
+      - {x: 0.53499997, y: 0.04}
+      - {x: 0.545, y: 0}
+      - {x: 0.66499996, y: -0.13}
+      - {x: 0.865, y: -0.28}
+      - {x: 0.875, y: -0.28}
+      - {x: 0.955, y: -0.35999998}
+      - {x: 0.525, y: -0.35999998}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 2
+  itemDescriptions:
+  - camera
+  - memory maker
+  - scene constructor

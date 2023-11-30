@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+// can be implemented into the timer code
+
 public class ChangeSprite : MonoBehaviour
 {
     public Sprite newSprite;

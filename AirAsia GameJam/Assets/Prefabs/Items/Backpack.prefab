@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3333145189594241157}
   - component: {fileID: 3333145189594241158}
   - component: {fileID: 3333145189594241156}
-  - component: {fileID: 3333145189594241152}
   - component: {fileID: 3224044770292638656}
-  - component: {fileID: 282184455267703268}
+  - component: {fileID: 2933689833072179806}
+  - component: {fileID: 3333145189594241152}
   m_Layer: 0
   m_Name: Backpack
   m_TagString: Items
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3333145189594241153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.8262, y: -13.0478, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,26 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &3333145189594241152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333145189594241153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  names:
-  - backpack
-  - stuff holder
-  - fabric container
-  item: {fileID: 3333145189594241153}
-  isPickedUp: 0
-  isHolding: 0
-  itemCollider: {fileID: 3224044770292638656}
 --- !u!61 &3224044770292638656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16991854, y: -1.3650122}
+  m_Offset: {x: 0.16746855, y: -1.3590138}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -153,10 +133,10 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9695024, y: 0.05669403}
+  m_Size: {x: 1.9492149, y: 0.068690896}
   m_EdgeRadius: 0
---- !u!61 &282184455267703268
-BoxCollider2D:
+--- !u!60 &2933689833072179806
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -168,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.006064296, y: 0.05433464}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,6 +158,74 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.7421286, y: 2.8013306}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.78499997, y: -1.425}
+      - {x: 0.945, y: -1.4549999}
+      - {x: 1.095, y: -1.4549999}
+      - {x: 1.255, y: -1.345}
+      - {x: 1.3249999, y: -1.275}
+      - {x: 1.365, y: -1.145}
+      - {x: 1.365, y: -0.775}
+      - {x: 1.355, y: -0.73499995}
+      - {x: 1.3149999, y: -0.60499996}
+      - {x: 1.155, y: -0.295}
+      - {x: 1.115, y: -0.185}
+      - {x: 0.965, y: 0.315}
+      - {x: 0.805, y: 0.955}
+      - {x: 0.72499996, y: 1.115}
+      - {x: 0.675, y: 1.185}
+      - {x: 0.66499996, y: 1.365}
+      - {x: 0.565, y: 1.4549999}
+      - {x: 0.305, y: 1.4549999}
+      - {x: 0.185, y: 1.425}
+      - {x: 0.055, y: 1.365}
+      - {x: -0.24499999, y: 1.305}
+      - {x: -0.435, y: 1.2049999}
+      - {x: -0.525, y: 1.145}
+      - {x: -0.575, y: 1.105}
+      - {x: -0.715, y: 0.955}
+      - {x: -0.775, y: 0.865}
+      - {x: -0.905, y: 0.635}
+      - {x: -0.97499996, y: 0.375}
+      - {x: -1.025, y: 0.13499999}
+      - {x: -1.035, y: 0.035}
+      - {x: -1.125, y: -0.074999996}
+      - {x: -1.2049999, y: -0.145}
+      - {x: -1.355, y: -0.275}
+      - {x: -1.3349999, y: -0.345}
+      - {x: -1.365, y: -0.415}
+      - {x: -1.365, y: -0.625}
+      - {x: -1.3349999, y: -0.655}
+      - {x: -1.365, y: -0.695}
+      - {x: -1.365, y: -0.835}
+      - {x: -1.3149999, y: -0.885}
+      - {x: -1.305, y: -0.98499995}
+      - {x: -1.225, y: -1.035}
+      - {x: -1.115, y: -1.025}
+      - {x: -1.045, y: -1.055}
+      - {x: -1.015, y: -1.185}
+      - {x: -0.965, y: -1.295}
+      - {x: -0.875, y: -1.395}
+      - {x: -0.775, y: -1.4449999}
+      - {x: -0.695, y: -1.4549999}
+      - {x: -0.055, y: -1.4549999}
+      - {x: 0.044999998, y: -1.415}
+      - {x: 0.24499999, y: -1.425}
+--- !u!114 &3333145189594241152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333145189594241153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da593912ae23f754f8ee107388522656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemMass: 2
+  itemDescriptions:
+  - backpack
+  - stuff holder
+  - fabric container
