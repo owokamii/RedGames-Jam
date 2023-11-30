@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-    public Texture2D cursor;
-    public Texture2D cursorClicked;
+    //public Texture2D cursor;
+    //public Texture2D cursorClicked;
 
     public float itemMass;
     public static List<string> PickedUpItems = new List<string>();
@@ -22,8 +22,8 @@ public class Draggable : MonoBehaviour
 
     private void Awake()
     {
-        Vector2 cursorOffset = new Vector2(cursor.width / 2, cursor.height / 2);
-        Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
+        //Vector2 cursorOffset = new Vector2(cursor.width / 2, cursor.height / 2);
+        //Cursor.SetCursor(cursor, cursorOffset, CursorMode.Auto);
 
         bottomCollider = GetComponent<BoxCollider2D>();
         itemCollider = GetComponent<PolygonCollider2D>();
